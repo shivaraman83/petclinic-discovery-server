@@ -1,0 +1,17 @@
+Artifactory: ArtifactoryUnified
+Pipelines:
+  name: pet_clinic_discovery_server
+GitRepo:
+  name: PetClinicProjectGitRepo
+  path: Samples/pet-clinic-project/spring-petclinic-microservices/spring-petclinic-discovery-server
+  provider: PetClinicProjectGitRepo
+Step1 :
+  name: bld_discovery_server
+Step2 :
+  name: bld_discovery_server_docker_image
+  dockerFileLocation: Samples/pet-clinic-project/spring-petclinic-microservices/spring-petclinic-discovery-server
+  dockerImageName: docker.artifactory-unified.soleng-us.jfrog.team/pet_clinic_discovery_server_docker_image
+  outputResourceName: DiscoveryServerDockerImage
+Step3 :
+  name: push_discovery_server_docker_image
+  outputResourceName : DiscoveryServerBuildInfo
