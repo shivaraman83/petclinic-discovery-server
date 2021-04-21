@@ -5,7 +5,7 @@ Resource2 :
   name : BuildMavenDiscoveryServer_ProduceDockerImage_BuildInfo
   imageName : docker.artifactory-unified.soleng-us.jfrog.team/discoveryserverdockerimage
 Resource3 :
-  name : PetClinicProjectGitRepo
+  name : DiscoveryProjectGitRepo
   gitProvider : Github_SolEng
   path: jfrog/SolEngDemo
   branch : pet-clinic-project
@@ -14,9 +14,8 @@ Artifactory: ArtifactoryUnified
 Pipelines:
   name: BuildMavenDiscoveryServer_ProduceDockerImage
 GitRepo:
-  name: PetClinicProjectGitRepo
+  name: DiscoveryProjectGitRepo
   path: Samples/pet-clinic-project/spring-petclinic-microservices/spring-petclinic-discovery-server
-  provider: PetClinicProjectGitRepo
 Step1 :
   name: mvn_bld_discovery_server
 Step2 :
