@@ -27,3 +27,5 @@ Step2 :
 Step3 :
   name: push_discovery_server_docker_image
   outputResourceName : BuildMavenConfigServer_ProduceDockerImage_BuildInfo
+
+
