@@ -27,10 +27,3 @@ Step2 :
 Step3 :
   name: push_discovery_server_docker_image
   outputResourceName : BuildMavenConfigServer_ProduceDockerImage_BuildInfo
-Resource1 :
-  name : MvnBuildDiscoveryServerDockerImage
-  imageName : docker.artifactory-unified.soleng-us.jfrog.team/discoveryserverdockerimage
-Resource2 :
-  name : BuildMavenDiscoveryServer_ProduceDockerImage_BuildInfo
-  imageName : docker.artifactory-unified.soleng-us.jfrog.team/discoveryserverdockerimage
-
