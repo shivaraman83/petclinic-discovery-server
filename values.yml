@@ -5,7 +5,7 @@ Resource2 :
   name : BuildMavenDiscoveryServer_ProduceDockerImage_BuildInfo
   imageName : docker.artifactory-unified.soleng-us.jfrog.team/discoveryserverdockerimage
 Resource3 :
-  name : PetClinicGitRepo
+  name : DiscoveryPetClinicGitRepo
   gitProvider : Github_SolEng
   path: jfrog/SolEngDemo
   branch : pet-clinic-project
